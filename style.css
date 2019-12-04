@@ -1,503 +1,563 @@
-    /*===================================GLOBAL STYLES==============*/
-    
-     :root {
-        --primary-background-color: white;
-        --secondary-background-color: rgb(2, 2, 73);
-        --optional-background-color: rgb(13, 145, 197);
-        --primary-font-color: rgb(43, 41, 41);
-        --secondary-font-color: white;
-        --heading1-heading2-color: navy;
-        --button-color: rgb(255, 102, 0);
-        --price-color: rgb(255, 102, 0);
-        --heading3-color: rgb(255, 102, 0);
-    }
-    
-    * {
-        box-sizing: border-box;
-    }
-    
+/*===================================GLOBAL STYLES==============*/
+
+ :root {
+    --primary-background-color: white;
+    --secondary-background-color: rgb(2, 2, 73);
+    --optional-background-color: rgb(13, 145, 197);
+    --primary-font-color: rgb(43, 41, 41);
+    --secondary-font-color: white;
+    --heading1-heading2-color: navy;
+    --button-color: rgb(255, 102, 0);
+    --price-color: rgb(255, 102, 0);
+    --heading3-color: rgb(255, 102, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: var(--primary-background-color);
+    color: var(--primary-font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+section#website-hosting,
+section#computer-training-services,
+section#contact-us,
+footer.links {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.price {
+    color: var(--price-color);
+    font-weight: 1000;
+    font-size: 2.5rem;
+}
+
+button {
+    color: var(--secondary-font-color);
+    background: var(--button-color);
+    padding: 10px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: var(--primary-background-color);
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+
+/*===================================HEADER STYLES==============*/
+
+header {
+    color: var(--secondary-font-color);
+    background: var(--secondary-background-color);
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+}
+
+div.header-image {
+    flex-grow: 1;
+    flex-basis: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-img {
+    display: block;
+    width: 90px;
+    height: 80px;
+}
+
+nav#nav-bar {
+    justify-self: flex-end;
+    flex-grow: 1;
+    flex-basis: 40%;
+    padding-top: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    flex-grow: 1;
+    justify-self: flex-end;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 5px;
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav ul li a:hover {
+    background: rgb(194, 192, 192)
+}
+
+
+/*TABLET/SMARTPHONE MENU NAVIGATION */
+
+.navbar-bg-color {
+    background-color: var(--secondary-background-color) !important;
+}
+
+.navbar-toggler-icon {
+    font-size: 25px !important;
+}
+
+section#tablet-smartphone-navigation {
+    display: none;
+}
+
+
+/*===================================HOME SECTION STYLES==============*/
+
+section#home {
+    height: 500px;
+    background: var(--secondary-background-color);
+    width: 100%;
+    padding-top: 90px;
+    color: var(--secondary-font-color);
+    text-align: center;
+}
+
+h1#title {
+    font-size: 4.5rem;
+    line-height: 1em;
+    font-weight: 800;
+}
+
+h1#title+p {
+    font-size: 2.5rem;
+}
+
+p:last-of-type {
+    font-size: 1.8rem;
+}
+
+span.special-text {
+    display: inline-block;
+    background: var(--primary-background-color);
+    color: var(--price-color);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+span.underlined-text {
+    text-decoration: underline;
+}
+
+button.header-button {
+    color: var(--secondary-font-color);
+    background: var(--button-color);
+    padding: 10px;
+    font-size: 4rem;
+    border: none;
+    border-radius: 15px;
+}
+
+button.header-button:hover {
+    background: var(--primary-background-color);
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+
+/**===============================ABOUT US SECTION STYLES */
+
+section#about-us {
+    background: var(--primary-background-color);
+    width: 90%;
+    margin: 50px auto;
+}
+
+section#about-us h1 {
+    font-size: 4rem;
+    line-height: 1em;
+    color: var(--heading1-heading2-color);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section#about-us h1+p {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--button-color);
+}
+
+section#about-us h2 {
+    color: var(--heading1-heading2-color);
+    font-size: 2.5rem;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+div#more-about-us-4 {
+    grid-column: 1/4;
+}
+
+div.more-about-us {
+    padding: 15px;
+    box-shadow: rgb(219, 217, 217) 10px 10px 5px;
+    margin-bottom: 20px;
+}
+
+div.sub-sec_more-about-us h3 {
+    color: var(--button-color);
+    margin-bottom: 0px;
+}
+
+div.sub-sec_more-about-us p {
+    margin: 0px;
+}
+
+
+/*===================================IFRAME STYLES==============*/
+
+iframe {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+
+/*===================================SECTION WEBHOSTING, COMPUTER TRAINING STYLES==============*/
+
+section#website-hosting,
+section#computer-training-services {
+    width: 90%;
+    margin: 20px auto;
+    background: url(pictures/hero_art_screens1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section#website-hosting h1,
+section#computer-training-services h1 {
+    font-size: 4rem;
+    line-height: 1em;
+    color: var(--heading1-heading2-color);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section#website-hosting h1+p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--button-color);
+}
+
+div.webhost-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+div.website-hosting-service {
+    background-color: var(--primary-background-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div.website-hosting-service h3,
+div.computer-training-courses h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--heading1-heading2-color);
+}
+
+div.computer-training-history {
+    background: var(--primary-background-color);
+    box-shadow: rgb(219, 217, 217) 10px 10px 5px;
+    padding: 10px;
+}
+
+div.computer-training-courses h3 {
+    color: var(--button-color);
+    margin-bottom: 0px;
+}
+
+div.computer-training-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+div.computer-training-services {
+    background: var(--primary-background-color);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+/**==================================CONTACT SECTION STYLES------------------------**/
+
+section#contact-us {
+    background: rgb(223, 220, 220);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+section#contact-us h1 {
+    font-size: 4rem;
+    line-height: 1em;
+    color: var(--heading1-heading2-color);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+section#contact-us h3 {
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--heading1-heading2-color);
+    margin-bottom: 0px;
+}
+
+section#contact-us h3+p {
+    margin-top: 5px;
+}
+
+div.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+div.fax-phone_numbers-live_chat-container {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+div.contact-us_phone-fax {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/**==============================EMAIL SUBSCRIPTION STYLES ==================**/
+
+form#form {
+    width: 100%;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
+h2#email-subscription-header {
+    margin-top: 50px;
+    font-size: 3rem;
+    font-weight: 100;
+    color: var(--heading1-heading2-color);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+div.label {
+    margin-right: 10px;
+}
+
+div.input-field {
+    margin-right: 10px;
+}
+
+label {
+    font-size: 2.5rem;
+}
+
+input[type=email],
+input[type=submit] {
+    padding: 10px;
+    font-size: 2rem
+}
+
+input[type=email] {
+    width: 70%;
+    font-size: 1.6rem
+}
+
+input[type=submit] {
+    color: var(--secondary-font-color);
+    background: var(--button-color);
+    padding: 10px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover {
+    background: var(--primary-background-color);
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px 0px;
+}
+
+footer.links {
+    background: var(--optional-background-color);
+    padding: 20px 150px 20px 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 0px;
+}
+
+footer h3 {
+    color: var(--secondary-font-color);
+    margin: 30px 0px 0px 0px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    color: gold;
+    font-weight: 500;
+}
+
+footer.links a:hover {
+    color: var(--optional-background-color);
+    background: gold;
+    font-weight: bold;
+}
+
+footer.social-icons {
+    background: rgb(2, 2, 73);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+}
+
+footer.social-icons img {
+    width: 40px;
+    margin: 0px 20px 0px 20px;
+}
+
+footer.social-icons img:hover {
+    background: var(--primary-background-color);
+}
+
+footer.copywrite-info {
+    background: var(--optional-background-color);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
     html {
-        font-size: 10px;
+        font-size: 55%;
     }
-    
-    body {
-        background: var(--primary-background-color);
-        color: var(--primary-font-color);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.8rem;
-        line-height: 1.5em;
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    section#website-hosting,
-    section#computer-training-services,
-    section#contact-us,
-    footer.links {
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    
-    .price {
-        color: var(--price-color);
-        font-weight: 1000;
-        font-size: 2.5rem;
-    }
-    
-    button {
-        color: var(--secondary-font-color);
-        background: var(--button-color);
-        padding: 10px;
-        font-size: 3rem;
-        border: none;
-        border-radius: 15px;
-    }
-    
-    button:hover {
-        background: var(--primary-background-color);
-        color: var(--button-color);
-        cursor: pointer;
-    }
-    /*===================================HEADER STYLES==============*/
-    
     header {
-        color: var(--secondary-font-color);
-        background: var(--secondary-background-color);
-        display: flex;
-        padding: 10px;
-        box-sizing: border-box;
-        position: sticky;
-        top: 0px;
-        width: 100%;
-        z-index: 10;
-    }
-    
-    div.header-image {
-        flex-grow: 1;
-        flex-basis: 200px;
-        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
-    #header-img {
+    div.header-image {
         display: block;
-    }
-    
-    nav#nav-bar {
-        justify-self: flex-end;
-        flex-grow: 1;
-        flex-basis: 40%;
-    }
-    
-    nav ul {
-        display: flex;
-    }
-    
-    nav ul li {
-        list-style: none;
-        flex-grow: 1;
-        justify-self: flex-end;
-    }
-    
-    nav ul li a {
-        display: inline-block;
-        padding: 5px;
-        color: var(--secondary-font-color);
-        text-decoration: none;
-        font-size: 2rem;
-    }
-    
-    nav ul li a:hover {
-        background: rgb(194, 192, 192)
-    }
-    /*===================================HOME SECTION STYLES==============*/
-    
-    section#home {
-        height: 500px;
-        background: var(--secondary-background-color);
-        width: 100%;
-        padding-top: 90px;
-        color: var(--secondary-font-color);
-        text-align: center;
-    }
-    
-    h1#title {
-        font-size: 4.5rem;
-        line-height: 1em;
-        font-weight: 800;
-    }
-    
-    h1#title+p {
-        font-size: 2.5rem;
-    }
-    
-    p:last-of-type {
-        font-size: 1.8rem;
-    }
-    
-    span.special-text {
-        display: inline-block;
-        background: var(--primary-background-color);
-        color: var(--price-color);
-        padding: 10px;
-        border-radius: 25px;
-    }
-    
-    span.underlined-text {
-        text-decoration: underline;
-    }
-    
-    button.header-button {
-        color: var(--secondary-font-color);
-        background: var(--button-color);
-        padding: 10px;
-        font-size: 4rem;
-        border: none;
-        border-radius: 15px;
-    }
-    
-    button.header-button:hover {
-        background: var(--primary-background-color);
-        color: var(--button-color);
-        cursor: pointer;
-    }
-    /**===============================ABOUT US SECTION STYLES */
-    
-    section#about-us {
-        background: var(--primary-background-color);
-        width: 90%;
-        margin: auto;
-    }
-    
-    section#about-us h1 {
-        font-size: 4rem;
-        line-height: 1em;
-        color: var(--heading1-heading2-color);
-        margin-bottom: 0px;
-        text-align: center;
-    }
-    
-    section#about-us h1+p {
-        text-align: center;
-        font-size: 2.5rem;
-        color: var(--button-color);
-    }
-    
-    section#about-us h2 {
-        color: var(--heading1-heading2-color);
-    }
-    
-    div.container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        gap: 30px;
-    }
-    
-    div#more-about-us-4 {
-        grid-column: 1/4;
-    }
-    
-    div.more-about-us {
-        padding: 15px;
-        box-shadow: rgb(219, 217, 217) 10px 10px 5px;
-        margin-bottom: 20px;
-    }
-    
-    div.sub-sec_more-about-us h3 {
-        color: var(--button-color);
-        margin-bottom: 0px;
-    }
-    
-    div.sub-sec_more-about-us p {
         margin: 0px;
     }
-    /*===================================IFRAME STYLES==============*/
-    
-    iframe {
-        display: block;
-        width: 70%;
-        margin: auto;
+    /* HOME SECTION */
+    section#home {
+        height: 550px;
+    }
+    /**=======================ABOUT US SECTION======================= */
+    div.container {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
     }
     /*===================================SECTION WEBHOSTING, COMPUTER TRAINING STYLES==============*/
-    
-    section#website-hosting,
-    section#computer-training-services {
-        width: 90%;
-        margin: auto;
-        background: url(pictures/hero_art_screens1.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    
-    section#website-hosting h1,
-    section#computer-training-services h1 {
-        font-size: 4rem;
-        line-height: 1em;
-        color: var(--heading1-heading2-color);
-        margin-bottom: 0px;
-        text-align: center;
-    }
-    
-    section#website-hosting h1+p {
-        font-size: 2.5rem;
-        font-weight: 300;
-        text-align: center;
-        color: var(--button-color);
-    }
-    
     div.webhost-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 30px;
+        display: flex;
+        flex-flow: column;
+        text-align: center;
     }
-    
-    div.website-hosting-service {
-        background-color: var(--primary-background-color);
-        padding: 20px;
-        border-radius: 20px;
-    }
-    
-    div.website-hosting-service h3,
-    div.computer-training-courses h2 {
-        font-size: 3rem;
-        font-weight: 100;
-        color: var(--heading1-heading2-color);
-    }
-    
-    div.computer-training-history {
-        background: var(--primary-background-color);
-        box-shadow: rgb(219, 217, 217) 10px 10px 5px;
-        padding: 10px;
-    }
-    
-    div.computer-training-courses h3 {
-        color: var(--button-color);
-        margin-bottom: 0px;
-    }
-    
     div.computer-training-courses {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
-    }
-    
-    div.computer-training-services {
-        background: var(--primary-background-color);
-        border-radius: 15px;
-        padding: 20px;
-    }
-    /**==================================CONTACT SECTION STYLES------------------------**/
-    
-    section#contact-us {
-        background: rgb(223, 220, 220);
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-    }
-    
-    section#contact-us h1 {
-        font-size: 4rem;
-        line-height: 1em;
-        color: var(--heading1-heading2-color);
-        margin-bottom: 0px;
+        display: flex;
+        flex-flow: column;
         text-align: center;
     }
-    
-    section#contact-us h3 {
-        font-size: 3rem;
-        font-weight: 100;
-        color: var(--heading1-heading2-color);
-        margin-bottom: 0px;
+    div.computer-training-services ul li {
+        list-style: none;
     }
-    
-    section#contact-us h3+p {
-        margin-top: 5px;
-    }
-    
     div.footer-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 50px;
+        display: flex;
+        flex-flow: column;
+        padding: 5px;
     }
-    
-    div.fax-phone_numbers-live_chat-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-    
-    div.contact-us_phone-fax {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    /**==============================EMAIL SUBSCRIPTION STYLES ==================**/
-    
-    form#form {
+    /* CONTACT US SECTION */
+    section#contact-us {
         width: 100%;
-        padding: 20px;
-        display: block;
-        text-align: center;
+        padding: 30px;
     }
-    
-    h2#email-subscription-header {
-        font-size: 3rem;
-        font-weight: 100;
-        color: var(--heading1-heading2-color);
-        margin-bottom: 0px;
-        text-align: center;
-    }
-    
-    div.label {
-        margin-right: 10px;
-    }
-    
-    div.input-field {
-        margin-right: 10px;
-    }
-    
-    label {
+    section#contact-us h3 {
         font-size: 2.5rem;
     }
-    
-    input[type=email],
-    input[type=submit] {
-        padding: 10px;
-        font-size: 2rem
-    }
-    
-    input[type=email] {
-        width: 70%;
-        font-size: 1.6rem
-    }
-    
-    input[type=submit] {
-        color: var(--secondary-font-color);
-        background: var(--button-color);
-        padding: 10px;
+    section#contact-us h1 {
         font-size: 3rem;
-        border: none;
-        border-radius: 15px;
-        margin-top: 10px;
     }
-    
-    input[type=submit]:hover {
-        background: var(--primary-background-color);
-        color: var(--button-color);
-        cursor: pointer;
-    }
-    
     footer.links {
         background: var(--optional-background-color);
-        padding: 20px 150px 20px 150px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin-bottom: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 0px;
     }
-    
-    footer h3 {
-        color: var(--secondary-font-color);
-        margin: 30px 0px 0px 0px;
-    }
-    
-    footer a {
-        text-decoration: none;
-        display: inline-block;
-        color: gold;
-        font-weight: 500;
-    }
-    
-    footer.links a:hover {
-        color: var(--optional-background-color);
-        background: gold;
-        font-weight: bold;
-    }
-    
     footer.social-icons {
-        background: rgb(2, 2, 73);
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
     }
-    
-    footer.social-icons img {
-        width: 40px;
-        margin: 0px 20px 0px 20px;
+}
+
+@media (max-width:850px) {
+    header#header {
+        display: none;
     }
-    
-    footer.social-icons img:hover {
-        background: var(--primary-background-color);
+    section#tablet-smartphone-navigation {
+        display: block;
     }
-    
-    footer.copywrite-info {
-        background: var(--optional-background-color);
-        padding: 10px;
-        text-align: center;
-        color: white;
-    }
-    
-    @media screen and (max-width: 800px) {
-        header {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        nav ul {
-            flex-flow: column;
-            align-items: center;
-        }
-        nav ul li {
-            margin-left: -40px;
-        }
-        div.header-image {
-            display: block;
-            margin: 0px;
-        }
-        /**=======================ABOUT US SECTION======================= */
-        div.container {
-            display: flex;
-            flex-flow: column;
-        }
-        /*===================================SECTION WEBHOSTING, COMPUTER TRAINING STYLES==============*/
-        div.webhost-container {
-            display: flex;
-            flex-flow: column;
-            text-align: center;
-        }
-        div.computer-training-courses {
-            display: flex;
-            flex-flow: column;
-            text-align: center;
-        }
-        div.computer-training-services ul li {
-            list-style: none;
-        }
-        div.footer-container {
-            display: flex;
-            flex-flow: column;
-        }
-        section#contact-us h3 {
-            font-size: 2.5rem;
-        }
-        section#contact-us h1 {
-            font-size: 3rem;
-        }
-        div.fax-phone_numbers-live_chat-container {
-            display: flex;
-            flex-flow: column;
-            text-align: center;
-        }
-        footer.links {
-            background: var(--optional-background-color);
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 5px 0px 0px 50px;
-        }
-        footer.social-icons {
-            justify-content: center;
-        }
-    }
+}

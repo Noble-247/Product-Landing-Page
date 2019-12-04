@@ -1,29 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Emmatech Digital World</title>
+    <title>Product Landing Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP LOCAL CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+
+    <!-- LOCAL CSS FILE -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
     <header id="header">
         <div id="header-image">
-            <img id="header-img" src="pictures/Photo from Emmanuel-1.png" alt="Emmatech logo" height="100" />
+            <img id="header-img" src="pictures/Photo from Emmanuel-1.png" alt="Emmatech logo" />
         </div>
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#home">Home</a></li>
                 <li><a class="nav-link" href="#about-us">About Us</a></li>
                 <li><a class="nav-link" href="#website-hosting">Website Hosting</a></li>
-                <li><a class="nav-link" href="#computer-training-services">Computer Training Services</a></li>
+                <li><a class="nav-link" href="#computer-training-services">Computer Training</a></li>
                 <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- TABLET/SMARTPHONE MENU NAVIGATION -->
+    <section id="tablet-smartphone-navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-bg-color">
+            <a class="navbar-brand"><img id="header-img" src="pictures/Photo from Emmanuel-1.png" alt="Emmatech logo" height="100" /></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a></li>
+                    </li>
+                    <li class="nav-item">
+                        <li><a class="nav-link" href="#website-hosting">Website Hosting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#computer-training-services">Computer Training</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+            </div>
+        </nav>
+    </section>
+    <!-- END OF TABLET/SMARTPHONE MENU NAVIGATION -->
+
     <main>
         <section id="home">
             <h1 id="title">
@@ -200,11 +255,13 @@
                     <p>7th Floor, Pritech Park Annex, Behind Ecospace, Varthur Hobli, Bellandur, Bengaluru East Taluk, Bengaluru Urban District, Bengaluru - 560103 Karnataka, India</p>
                 </div>
             </div>
-            <h1>24/7/365 Support Means We're Always Available To Help!</h1>
+
             <div class="fax-phone_numbers-live_chat-container">
+                <h1>24/7/365 Support Means We're Always Available To Help!</h1>
                 <div class="live-chat">
                     <h3>Live Chat</h3>
-                    <p>Our expert representatives are available to assist you 24/7/365. No issue is too big or too small!</p>
+                    <p>Our expert representatives are available to assist you 24/7/365. No issue is too big or too small!
+                    </p>
                     <button type="submit">Start Chat Now</button>
                 </div>
                 <div class="contact-us_phone-fax">
@@ -308,6 +365,26 @@
     <footer class="copywrite-info">
         <p>&copy; 2019 Emmatech Digital World <br>All Rights Reserved</p>
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <!-- LOCAL JQUERY SCRIPT -->
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP LOCAL SCRIPT -->
+    <script src="js/bootstrap.js"></script>
+
+
+    <!-- SMOOTH SCROLL SCRIPT -->
+    <script src=" https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js "></script>
+
+    <script src=" main.js "></script>
 </body>
 
 </html>
