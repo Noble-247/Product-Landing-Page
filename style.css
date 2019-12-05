@@ -108,6 +108,7 @@ nav ul li {
     list-style: none;
     flex-grow: 1;
     justify-self: flex-end;
+    padding-left: 50px;
 }
 
 nav ul li a {
